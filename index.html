@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Johan Cass - Desarrollador Web</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+
+    <!--Color de la aplicacion-->
+    <meta name="theme-color" content="#89a193">
+    <!--optimizacion para el movil-->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--Meta etiquetas PWA para Apple-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="/src/icons/favicon.ico">
+    <link rel="apple-touc-startup-image" href="/src/icons/favicon.ico">
+    <!--Configuracion General de PWA cargar el manifesto-->
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Johan Cass</a>
+                <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="profile">
+            <img src="src/img/download.jpeg" alt="Johan Cass - Desarrollador Web">
+            <h1>Johan Cass</h1>
+            <p>Desarrollador de software apasionado por crear experiencias digitales únicas y funcionales.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects">
+                <article class="project">
+                    <img src="src/img/siia.jpeg" alt="Proyecto 1">
+                    <div class="project-content">
+                        <h3>Proyecto 1</h3>
+                        <p>Desarrollo de una sitio web ERP.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="src/img/autosenrenta.jpeg" alt="Proyecto 2">
+                    <div class="project-content">
+                        <h3>Proyecto 2</h3>
+                        <p>Desarrollo de un sitio web para la renta de autos e implementación de GrapeJS para la edición del sitio.</p>
+                    </div>
+                </article>
+                <!-- <article class="project">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Proyecto 3">
+                    <div class="project-content">
+                        <h3>Proyecto 3</h3>
+                        <p>Creación de un dashboard interactivo para visualización de datos utilizando D3.js y Vue.js.</p>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+
+        <section id="habilidades" class="skills">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skill-list">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Git</span>
+                <span class="skill">C#</span>
+                <span class="skill">Sql</span>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2024 Johan Cass. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/Jcassp" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/johan-cass-9b24a725b/" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
